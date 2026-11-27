@@ -947,7 +947,7 @@ function naLoad(){ touchedSinceLoad=false; pendingSave=false; }
 
 // ── ACCOUNT-OPSLAG: bakjes en woorden bewaard op je Claude-account ───────────
 // Overleeft elke app-update en werkt op al je apparaten (zelfde account).
-const APP_V="v6-44";
+const APP_V="v6-45";
 let cloudRef=null, cloudTimer=null, cloudBusy=false, cloudDirty=false;
 const touchedIds=new Set();  // woorden die de gebruiker DEZE sessie heeft aangeraakt — winnen altijd van binnenkomende kopieën
 let pendingSave=false, lastCloudT=0;
@@ -3184,7 +3184,10 @@ var STARTSET_CODE=[
 "你需要吃很多蔬菜，对你的身体好。 | Nǐ xūyào chī hěn duō shūcài, duì nǐ de shēntǐ hǎo. | Je moet veel groenten eten, dat is goed voor je gezondheid. | 对 … 好 duì … hǎo = goed voor … | nǐ = jij; xūyào = moeten, nodig hebben; chī = eten; hěn duō = veel; shūcài = groenten; duì = voor; nǐ de = jouw; shēntǐ = lichaam, gezondheid; hǎo = goed",
 "我今天卖得比昨天多。 | Wǒ jīntiān mài de bǐ zuótiān duō. | Ik verkoop vandaag meer dan gisteren. | werkwoord + 得 + 比 B + eigenschap = het …-er doen dan B; tegenovergestelde: 卖得比昨天少 shǎo (minder) | wǒ = ik; jīntiān = vandaag; mài = verkopen; de = (koppelt hoe je iets doet); bǐ = dan (bij vergelijking); zuótiān = gisteren; duō = meer, veel",
 "这个菜我们没点。 | Zhège cài wǒmen méi diǎn. | Dit gerecht hebben we niet besteld. | 点 diǎn = eten bestellen in het restaurant (点菜); 订 dìng = vooraf bestellen/reserveren | zhège = dit, deze; cài = gerecht; wǒmen = wij; méi = niet (verleden); diǎn = bestellen (eten)",
-"高美下次来荷兰的时候，我会给她做一个蛋糕。 | Gāoměi xià cì lái Hélán de shíhou, wǒ huì gěi tā zuò yí ge dàngāo. | Als Gaomei de volgende keer in Nederland is, maak ik een cake voor haar. | 给 gěi + persoon + werkwoord = iets vóór iemand doen | Gāoměi = Gaomei; xià cì = volgende keer; lái = komen; Hélán = Nederland; de shíhou = wanneer, als; wǒ = ik; huì = zal; gěi tā = voor haar; zuò = maken; yí ge = een; dàngāo = cake, taart"
+"高美下次来荷兰的时候，我会给她做一个蛋糕。 | Gāoměi xià cì lái Hélán de shíhou, wǒ huì gěi tā zuò yí ge dàngāo. | Als Gaomei de volgende keer in Nederland is, maak ik een cake voor haar. | 给 gěi + persoon + werkwoord = iets vóór iemand doen | Gāoměi = Gaomei; xià cì = volgende keer; lái = komen; Hélán = Nederland; de shíhou = wanneer, als; wǒ = ik; huì = zal; gěi tā = voor haar; zuò = maken; yí ge = een; dàngāo = cake, taart",
+"有认识的朋友吗？ | Yǒu rènshi de péngyou ma? | Zijn er vrienden die je kent? | spreektaal: het onderwerp (你) is weggelaten | yǒu = hebben, er zijn; rènshi = kennen; de = (verbindend woord); péngyou = vriend(en); ma = vraagwoordje",
+"你在这里有认识的朋友吗？ | Nǐ zài zhèlǐ yǒu rènshi de péngyou ma? | Heb je hier vrienden die je kent? |  | nǐ = jij; zài zhèlǐ = hier; yǒu = hebben; rènshi = kennen; de = (verbindend woord); péngyou = vriend(en); ma = vraagwoordje",
+"你认识这里的人吗？ | Nǐ rènshi zhèlǐ de rén ma? | Ken je hier mensen? |  | nǐ = jij; rènshi = kennen; zhèlǐ = hier; de = van (koppelwoordje); rén = mens(en), mensen; ma = vraagwoordje"
 ].join('\n');
 
 // Ingebouwde zin gewijzigd? Zet hier oud Chinees → nieuw Chinees; de opgeslagen zin wordt dan bijgewerkt
