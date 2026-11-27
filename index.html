@@ -947,7 +947,7 @@ function naLoad(){ touchedSinceLoad=false; pendingSave=false; }
 
 // ── ACCOUNT-OPSLAG: bakjes en woorden bewaard op je Claude-account ───────────
 // Overleeft elke app-update en werkt op al je apparaten (zelfde account).
-const APP_V="v6-43";
+const APP_V="v6-44";
 let cloudRef=null, cloudTimer=null, cloudBusy=false, cloudDirty=false;
 const touchedIds=new Set();  // woorden die de gebruiker DEZE sessie heeft aangeraakt — winnen altijd van binnenkomende kopieën
 let pendingSave=false, lastCloudT=0;
@@ -1639,7 +1639,7 @@ function stopParen(){
 const PY_T={"ā":"a1","á":"a2","ǎ":"a3","à":"a4","ē":"e1","é":"e2","ě":"e3","è":"e4",
   "ī":"i1","í":"i2","ǐ":"i3","ì":"i4","ō":"o1","ó":"o2","ǒ":"o3","ò":"o4",
   "ū":"u1","ú":"u2","ǔ":"u3","ù":"u4","ǖ":"v1","ǘ":"v2","ǚ":"v3","ǜ":"v4","ü":"v",
-  "ă":"a3","ĕ":"e3","ĭ":"i3","ŏ":"o3","ŭ":"u3"};  // breve-varianten (toetsenbord) = toon 3
+  "ă":"a3","ĕ":"e3","ĭ":"i3","ŏ":"o3","ŭ":"u3","ä":"a3","ë":"e3","ï":"i3","ö":"o3"};  // breve-varianten (toetsenbord) = toon 3
 function pyOntleed(s){
   let letters="",tonen=[];
   let t=(s||""); if(t.normalize) t=t.normalize("NFC");
